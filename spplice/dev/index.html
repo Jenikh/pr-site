@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head>
+    <meta charset="utf-8">
+    <title>Your mods on Spplice</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <style media="screen">
+
+      #download-container {
+        text-align: center;
+        margin: 6vh 0;
+        padding: 3vh 0;
+        background-color: #242424;
+        border: 2px solid white;
+        border-left: 0;
+        border-right: 0;
+      }
+
+      #download-title {
+        margin-top: 0;
+        font-size: 2.5rem;
+      }
+      #download-title span {
+        color: #fa911a;
+        background: #fa911a;
+        background: -moz-linear-gradient(135deg, rgba(250,122,27,1) 0%, rgba(250,168,26,1) 100%);
+        background: -webkit-linear-gradient(135deg, rgba(250,122,27,1) 0%, rgba(250,168,26,1) 100%);
+        background: linear-gradient(135deg, rgba(250,122,27,1) 0%, rgba(250,168,26,1) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      #download-button {
+        color: black;
+        font-size: 1.8rem;
+
+        padding: 15px;
+        border-bottom: 4px solid black;
+        border-right: 4px solid black;
+        border-top: 0 solid #242424;
+        border-left: 0 solid #242424;
+        border-radius: 10px;
+
+        cursor: pointer;
+
+        background: #fa911a;
+        background: -moz-linear-gradient(135deg, rgba(250,168,26,1) 0%, rgba(250,122,27,1) 100%);
+        background: -webkit-linear-gradient(135deg, rgba(250,168,26,1) 0%, rgba(250,122,27,1) 100%);
+        background: linear-gradient(135deg, rgba(250,168,26,1) 0%, rgba(250,122,27,1) 100%);
+        filter: brightness(1.0);
+
+        transition: border-top 0.1s, border-bottom 0.1s, border-right 0.1s, border-left 0.1s, filter 0.3s;
+      }
+      #download-button:hover {
+        border-bottom: 0 solid black;
+        border-right: 0 solid black;
+        border-top: 4px solid #242424;
+        border-left: 4px solid #242424;
+      }
+      #download-button:active {
+        transition: filter 0s;
+        filter: brightness(1.7);
+      }
+
+      #download-other {
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 10px 0 0 0;
+      }
+      a {
+        color: #fa911a;
+      }
+
+      #screenshot {
+        width: 30vw;
+        margin: 2% 0 2% 50%;
+        border: 2px solid white;
+        border-radius: 10px;
+        transform: translateX(-50%);
+      }
+
+      footer {
+        height: 25vh;
+      }
+
+    </style>
+
+    <script type="text/javascript">
+
+      function download() {
+        var link = document.createElement("a");
+        link.setAttribute("href", "spplicer.zip");
+        link.setAttribute("download", "");
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+      }
+
+    </script>
+  </head>
+  <body>
+    <h1 class="title">You do the modding, we'll do the rest</h1>
+    <p class="paragraph">
+      Regardless of if you're making a map pack, a simple VScript hack or a
+      full-blown mod, Spplice lets you focus on your projects without worrying
+      about getting them to your players.
+      <br>
+      <br>
+      Spplice works by automatically extracting pre-packaged project files,
+      which can then be loaded into Portal 2 from a single click in the app.
+      These packages can be loaded from a local file or fetched from an
+      online repository - more on this later. The tool for creating these
+      packages is built into Spplice 2.
+    </p>
+    <h2 class="center-text">Isn't that like... more work?</h2>
+    <p class="paragraph">
+      Nope! Chances are, you've already got the right stuff for a Spplice package.
+      Any project with the file structure of the Portal 2 game files is (probably)
+      already valid for packaging. As long as you don't need to override anything
+      in the "update" folder, you should be fine. So if you can run your mod from
+      within, for example, "portal2_dlc3", you're good to go.
+    </p>
+    <h1 class="center-text">Okay, how do I do this?</h1>
+    <p class="paragraph">
+      Keep in mind that package generation is still a beta feature of Spplice 2,
+      but it should be stable enough for most cases. To access this feature, open
+      the Spplice settings and click on the title text 5 times. This will open
+      the Spplice Development Kit, which should be a simple-to-use utility for
+      creating package files.
+    </p>
+    <img id="screenshot" src="../site_assets/spplicer.jpg">
+    <h2 class="center-text">I've got the package... what now?</h2>
+    <p class="paragraph">
+      You can test it out by clicking the "+" icon on the Spplice home page and
+      from there clicking "Select package file". If everything works as expected,
+      you can already begin distributing your mod with this file alone. However,
+      as teased previously, Spplice has a global repository. If you want to
+      submit your package for review and get a chance at being featured there,
+      send an email to <a href="mailto:p2r3@p2r3.com?subject=Spplice package upload request">p2r3@p2r3.com</a>.
+      <br>
+      <br>
+      You probably also noticed that Spplice provides an option for adding custom
+      repositories. These are a bit tricky to set up, but can be much nicer for
+      distribution and live updates. We're not going to cover how to create one
+      here, but you should be able to figure that out by following the format of
+      the <a href="../repo2">global repository</a>.
+    </p>
+    <footer></footer>
+  
+
+</body></html>
